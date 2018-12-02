@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=KIVEV-PV8QS-PFGIX-HSCD4-GU9XC-JX4J7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\MDK-ARM\globalposition.uvprojx
+Project File Date:  11/28/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'globalposition'
+assembling startup_stm32f405xx.s...
+startup_stm32f405xx.s: error: A1023E: File "startup_stm32f405xx.s" could not be opened: No such file or directory
+compiling can.c...
+../Inc/can.h(72): warning:  #1295-D: Deprecated declaration can_init - give arg types
+  extern void can_init();
+../Src/can.c(80): error:  #136: struct "<unnamed>" has no field "SyncJumpWidth"
+    hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
+../Src/can.c(81): error:  #136: struct "<unnamed>" has no field "TimeSeg1"
+    hcan1.Init.TimeSeg1 = CAN_BS1_9TQ;
+../Src/can.c(82): error:  #136: struct "<unnamed>" has no field "TimeSeg2"
+    hcan1.Init.TimeSeg2 = CAN_BS2_4TQ;
+../Src/can.c(83): error:  #136: struct "<unnamed>" has no field "TimeTriggeredMode"
+    hcan1.Init.TimeTriggeredMode = DISABLE;
+../Src/can.c(84): error:  #136: struct "<unnamed>" has no field "AutoBusOff"
+    hcan1.Init.AutoBusOff = DISABLE;
+../Src/can.c(85): error:  #136: struct "<unnamed>" has no field "AutoWakeUp"
+    hcan1.Init.AutoWakeUp = DISABLE;
+../Src/can.c(86): error:  #136: struct "<unnamed>" has no field "AutoRetransmission"
+    hcan1.Init.AutoRetransmission = DISABLE;
+../Src/can.c(87): error:  #136: struct "<unnamed>" has no field "ReceiveFifoLocked"
+    hcan1.Init.ReceiveFifoLocked = DISABLE;
+../Src/can.c(88): error:  #136: struct "<unnamed>" has no field "TransmitFifoPriority"
+    hcan1.Init.TransmitFifoPriority = DISABLE;
+../Src/can.c: 1 warning, 9 errors
+compiling main.c...
+../Inc/can.h(72): warning:  #1295-D: Deprecated declaration can_init - give arg types
+  extern void can_init();
+../Src/main.c: 1 warning, 0 errors
+compiling gpio.c...
+compiling usart.c...
+../Src/usart.c(145): warning:  #223-D: function "memcpy" declared implicitly
+      memcpy(s+4,&arg1,sizeof(arg1));
+../Src/usart.c: 1 warning, 0 errors
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal.c...
+"globalposition\globalposition.axf" - 10 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:58
+</pre>
+</body>
+</html>
