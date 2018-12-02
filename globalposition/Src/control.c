@@ -5,6 +5,7 @@ float Xspeed = 0;
 float Yspeed = 0;
 float pos_5_circle = 30.00;
 float neg_5_circle = 30.26;
+float xyintersection = 1.5707963 + 0.01;
 double Xlength = 0;
 double Ylength = 0;
 double pos_X = 0;
@@ -78,6 +79,6 @@ void position_dev_cal_xy()
 {
     position_dev_get_speed();
     position_dev_get_angle();
-    pos_X += Xlength * cos(CarAngleSigma) - Ylength * sin(CarAngleSigma);
-    pos_Y += Ylength * cos(CarAngleSigma) + Xlength * sin(CarAngleSigma);
+    pos_X += Xlength * cos(CarAngleSigma) + Ylength * cos(xyintersection + CarAngleSigma);
+    pos_Y += Ylength * cos(CarAngleSigma) + Xlength * cos(xyintersection - CarAngleSigma);
 }

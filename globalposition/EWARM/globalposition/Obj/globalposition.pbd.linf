@@ -5,6 +5,7 @@ C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWAR
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\i2c.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\main.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\mpu9250.pbi
+C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\spi.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_can.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_cortex.pbi
@@ -21,6 +22,7 @@ C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWAR
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_pwr_ex.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_rcc.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_rcc_ex.pbi
+C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_spi.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_tim.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_tim_ex.pbi
 C:\Users\wangyunxuan\Desktop\Robocon\program\global position\globalposition\EWARM\globalposition\Obj\stm32f4xx_hal_uart.pbi

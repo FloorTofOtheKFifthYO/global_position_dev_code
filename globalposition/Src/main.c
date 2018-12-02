@@ -41,6 +41,7 @@
 #include "stm32f4xx_hal.h"
 #include "can.h"
 #include "i2c.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -100,12 +101,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  //MX_CAN1_Init();
+ //MX_CAN1_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_I2C3_Init();
   MX_TIM4_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
   position_dev_init() ;
 //  can_init();
@@ -202,7 +204,7 @@ void TEST_FUNC(CanRxMsgTypeDef* pRxMsg)
 void HAL_SYSTICK_Callback(void){
   static int time_1ms_cnt;
   time_1ms_cnt++;
-  if(time_1ms_cnt%200 == 0 && main_flag == 1){
+  if(time_1ms_cnt%500 == 0 && main_flag == 1){
      uprintf("P2=%f  P4=%f  X=%lf  Y=%lf CarAngleSigma=%f\n",Xspeed,Yspeed,pos_X,pos_Y,CarAngleSigma);
   }
   if(time_1ms_cnt%10 == 0 && main_flag == 1){

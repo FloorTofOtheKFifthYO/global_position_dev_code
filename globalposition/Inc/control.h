@@ -13,6 +13,7 @@ extern double pos_X;
 extern double pos_Y;
 extern float CarAngleSigma;
 extern float CarGyroVal;
+extern float xyintersection;
     
 extern void position_dev_init() ;
 extern void position_dev_cal_xy();

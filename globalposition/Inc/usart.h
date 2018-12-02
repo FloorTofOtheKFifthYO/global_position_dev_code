@@ -50,6 +50,7 @@
 /* USER CODE BEGIN Includes */
 #include "stdarg.h"
 #include "stdlib.h"
+#include "control.h"
 /* USER CODE END Includes */
 
 extern UART_HandleTypeDef huart2;
