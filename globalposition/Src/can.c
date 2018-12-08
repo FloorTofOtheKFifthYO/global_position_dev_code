@@ -73,8 +73,7 @@ CAN_HandleTypeDef hcan1;
 /* CAN1 init function */
 void MX_CAN1_Init(void)
 {
-
-  hcan1.Instance = CAN1;
+hcan1.Instance = CAN1;
   hcan1.Init.Prescaler = 3;
   hcan1.Init.Mode = CAN_MODE_LOOPBACK;
   hcan1.Init.SJW = CAN_SJW_1TQ;

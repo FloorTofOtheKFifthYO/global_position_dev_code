@@ -1196,6 +1196,9 @@
         <group>
             <name>User</name>
             <file>
+                <name>$PROJ_DIR$\..\Src\ADXRS810.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\can.c</name>
             </file>
             <file>
@@ -1212,6 +1215,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\mpu9250.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\spi.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
@@ -1281,6 +1287,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</name>

@@ -22,7 +22,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>2983669388</Checksum>
+        <Checksum>4017388617</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -42,9 +42,9 @@
         <OverrideDefaultClocks>0</OverrideDefaultClocks>
         <CpuClock>72000000</CpuClock>
         <ClockAutoDetect>0</ClockAutoDetect>
-        <ClockWanted>2000000</ClockWanted>
-        <JtagSpeed>2250000</JtagSpeed>
-        <Prescaler>32</Prescaler>
+        <ClockWanted>250000</ClockWanted>
+        <JtagSpeed>250000</JtagSpeed>
+        <Prescaler>288</Prescaler>
         <TimeStampPrescIndex>0</TimeStampPrescIndex>
         <TimeStampPrescData>0</TimeStampPrescData>
         <PcSampCYCTAP>1</PcSampCYCTAP>
@@ -148,7 +148,8 @@
         <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c}.222.9" 0 0 1 "" 0 "" 0</Bp0>
         <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c}.1221.12" 0 0 1 "" 0 "" 0</Bp1>
         <Bp2>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\mpu9250.c}.187.3" 0 0 1 "" 0 "" 0</Bp2>
-        <Count>3</Count>
+        <Bp3>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\usart.c}.170.13" 0 0 1 "" 0 "" 0</Bp3>
+        <Count>4</Count>
     </Breakpoints2>
     <Aliases>
         <Count>0</Count>

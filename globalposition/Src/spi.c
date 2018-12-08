@@ -68,7 +68,7 @@ void MX_SPI2_Init(void)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
-
+    __HAL_SPI_ENABLE(&hspi2);
 }
 
 void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)

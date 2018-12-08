@@ -44,6 +44,13 @@
 
 /* USER CODE BEGIN 0 */
 uint8_t aRxBuffer;
+
+/*
+在init中加入这个：
+  HAL_UART_Receive_IT(&huart2,(uint8_t *)&aRxBuffer,1);
+   HAL_NVIC_SetPriority(USART2_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(USART2_IRQn);
+*/
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart2;
@@ -65,6 +72,7 @@ void MX_USART2_UART_Init(void)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
+
 }
 
 void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)

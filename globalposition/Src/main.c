@@ -101,7 +101,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
- //MX_CAN1_Init();
+  //MX_CAN1_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
@@ -112,6 +112,7 @@ int main(void)
   position_dev_init() ;
 //  can_init();
 //  can_add_callback(320, TEST_FUNC);
+  //ADXRS810_init();
   
   main_flag = 1;
   uprintf("start...\r\n");
@@ -205,7 +206,9 @@ void HAL_SYSTICK_Callback(void){
   static int time_1ms_cnt;
   time_1ms_cnt++;
   if(time_1ms_cnt%500 == 0 && main_flag == 1){
-     uprintf("P2=%f  P4=%f  X=%lf  Y=%lf CarAngleSigma=%f\n",Xspeed,Yspeed,pos_X,pos_Y,CarAngleSigma);
+     uprintf("P2=%f  P4=%f  X=%lf  Y=%lf CarAngleSigma=%lf, CarAngleSigma2=%lf\n",Xspeed,Yspeed,pos_X,pos_Y,CarAngleSigma,CarAngleSigma2);
+     //uprintf("ADXRS = %f\r\n",ADXRS810_Data() / 80.0);
+     //ADXRS810_Read_ID();
   }
   if(time_1ms_cnt%10 == 0 && main_flag == 1){
      position_dev_cal_xy();

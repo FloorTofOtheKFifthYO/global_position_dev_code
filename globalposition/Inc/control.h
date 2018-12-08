@@ -6,13 +6,16 @@
 #include "tim.h"
 #include "mpu9250.h"
 #include "math.h"
+#include "ADXRS810.h"
      
 extern float Xspeed;
 extern float Yspeed;
 extern double pos_X;
 extern double pos_Y;
-extern float CarAngleSigma;
-extern float CarGyroVal;
+extern double CarAngleSigma;
+extern double CarGyroVal;
+extern double CarAngleSigma2;
+extern double CarGyroVal2;
 extern float xyintersection;
     
 extern void position_dev_init() ;
